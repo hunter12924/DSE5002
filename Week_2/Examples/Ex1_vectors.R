@@ -1,10 +1,16 @@
+#Defining function fib for calculating Fibonacci numbers
 fib  <- function(n)
+
 {
-  if (length(n) > 1) return(sapply(n, fib)) 
+#if n is a  vector, run the fib function on all the numbers and return the result as a vector (sapply)
+  if (length(n) > 1) return(sapply(n, fib))
   if (n == 1) return(1) 
-  if (n == 2) return(1) 
+  if (n == 2) return(1)
+#add Fibonacci numbers for n-1 and n-2 (n is a vector)
   return(fib(n-1)+fib(n-2)) 
-}
+  }
+  #fib(1:10)
+  
 catalan <- function(n) {
   cat <- vector("numeric", length(max(n)) + 1)
   for (i in 0:max(n)) {
