@@ -1,6 +1,6 @@
 ---
 title: "Week 2 Exercises"
-author: "YHunter Huberdeau"
+author: "Hunter Huberdeau"
 date: "October 27, 2023"
 output: pdf_document
 ---
@@ -8,9 +8,12 @@ output: pdf_document
 Please complete all exercises below. You may use stringr, lubridate, or the forcats library. 
 
 Place this at the top of your script:
+```{r}
 library(stringr)
 library(lubridate)
 library(forcats)
+
+```
 
 # Exercise 1
 Read the sales_pipe.txt file into an R data frame as sales. 
